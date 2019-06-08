@@ -3,11 +3,11 @@ var express = require('express');
 var app = express ();
 
 app.get('/',(req,res)=>{
-    res.send('this is homepage')
+    res.sendFile(__dirname +'/index.html')
 })
 
 app.get('/contact',(req,res)=>{
-    res.send('this is the contact page')
+    res.sendFile(__dirname +'/index.html')
 })
 
 app.get('/profile/:id',(req,res)=>{
